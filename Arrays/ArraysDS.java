@@ -17,15 +17,15 @@ public class Solution {
         
         
         for (int i = 0; i < n / 2; i++) {
-            int t = arr[i];
-            arr[i] = arr[n - i - 1];
-            arr[n - i - 1] = t;
+            int t = arr[i];//saving first element
+            arr[i] = arr[n - i - 1];  //storing last element in first
+            arr[n - i - 1] = t; //first element stored to last element
         }
         
         
-        for(int i=0;i<n;i++)
+        for(int i:arr)
         {
-            System.out.print(arr[i]+" ");
+            System.out.print(i+" ");
         }
     
     }
