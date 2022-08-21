@@ -1,0 +1,45 @@
+package src;
+
+public class inher {
+
+	public static void main(String[] args) {
+		int a=10;
+		int b=10;
+		D a1=new D();
+		a1.mul(a, b);
+		a1.sum(a, b);
+		a1.sqr(a, b);
+		
+		 
+
+	}
+
+}
+
+class A{
+	void sum(int a,int b)
+	{
+		System.out.println(a+b);
+	}
+}
+
+class B extends A{
+	void mul(int a,int b)
+	{
+		System.out.println(a*b);
+	}
+}
+
+class C extends B{
+	void div(int a,int b)
+	{
+		System.out.println(a/b);
+	}
+}
+
+class D extends C{
+	void sqr(int a,int b)
+	{
+		System.out.println(a*a);
+	}
+}
