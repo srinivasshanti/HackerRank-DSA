@@ -13,14 +13,14 @@ public class poly implements inter1,inter2 {
 
 	
 	public void show() {
-		inter1.super.show();
+		inter1.show();
 		inter2.super.show();
 	}
 	
 } 
  
 interface inter1{
-	default void show()
+	static void show() //we can also use static in place of default will change
 	{
 		System.out.println("A");
 	}
