@@ -1,3 +1,5 @@
+//The Java programming language supports multiple inheritance of type, which is the ability of a class to implement more than one interface.
+//since java cannot inherit two or more class so java overcomed the disadvantage by inherting interfaces
 package src;
 
 public class poly implements inter1,inter2 {
