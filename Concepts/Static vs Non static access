@@ -1,0 +1,16 @@
+package src;
+
+public class poly {
+	static String a="I am STATIC";
+	String b="I am NON STATIC";
+
+	public static void main(String[] args) {
+		poly p=new poly();
+		System.out.println(a);
+		System.out.println(p.b);
+		
+		
+	}
+} 
+
+
