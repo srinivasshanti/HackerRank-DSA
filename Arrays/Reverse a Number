@@ -1,0 +1,19 @@
+package src;
+import java.util.*;
+
+public class poly {
+	 public static void main(String[] args) {	
+		int n[]= {1,2,3,4,5};
+		 String neww="";
+		for(int i=0;i<5;i++)
+		{
+			int temp=(int) n[i];		
+			 neww=temp+neww;		
+		}
+		
+		System.out.println(neww);	
+	}	
+} 
+ 
+
+
