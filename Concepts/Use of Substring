@@ -1,0 +1,35 @@
+package src;
+import java.util.*;
+
+public class poly {
+	 public static void main(String[] args) {
+		 String str[] =  
+			 {  
+			 "Praveen Kumar",  
+			 "Yuvraj Singh",  
+			 "Harbhajan Singh",  
+			 "Gurjit Singh",  
+			 "Virat Kohli",  
+			 "Rohit Sharma",  
+			 "Sandeep Singh",  
+			 "Milkha Singh"  
+			 };  //string array
+			   
+			 String surName = "kumar";  
+			 int surNameSize = surName.length();  			   	
+			   
+			 for(int j = 0; j < str.length; j++)  
+			 {  
+			     int length = str[j].length();
+			     String subStr = str[j].substring(length - surNameSize).toLowerCase();  			     // extracting the surname  	
+			     
+			     if(subStr.equals(surName.toLowerCase()))  			     // checks whether the surname is equal to "kumar" or not  
+			     {  
+			         System.out.println(str[j]);  
+			     }  
+			 }  	 
+	}	
+} 
+ 
+
+
