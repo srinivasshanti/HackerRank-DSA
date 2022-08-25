@@ -1,0 +1,58 @@
+package src;
+import java.util.*;
+
+public class poly { 
+		public static void main(String argvs[])  
+		{     
+		poly obj = new poly();  //to access the function
+		String str[] =  
+		{  
+		"madam",  
+		"rock",  
+		"eye",  
+		"noon",  
+		"kill"  
+		};   //string array
+		  
+		for(int j = 0; j < str.length; j++)  
+		{  
+		   if(obj.isPalindrome(str[j]))  
+		   {  
+		     System.out.println(str[j] + " is a palindrome.");  
+		   }  
+		   else  
+		   {  
+		     System.out.println(str[j] + " is not a palindrome.");  
+		   }  
+	    }  
+} 
+	
+	public boolean isPalindrome(String str)  
+	{  
+	      int size = str.length(); 
+	      // handling the base case  
+	      // an empty string or a string of only one character is always a palindrome
+	      if(size == 0 || size == 1)  
+	      {  		 
+	         return true;  
+	      }  
+	      String f = str.substring(0, 1);  //first element
+	      String l = str.substring(size - 1);  //last element
+	      
+	      System.out.println(f+" "+l);
+	      
+	      // comparing first and the last character of the string  
+	      if(l.equals(f))  
+	      {  
+	       // recursively finding the solution using the substring() method  
+	       // reducing the number of characters of the by 2 for the next recursion  
+	         return isPalindrome(str.substring(1, size - 1));  
+	      }  
+	      return false;  
+	}    
+	  
+	
+} 
+ 
+
+
