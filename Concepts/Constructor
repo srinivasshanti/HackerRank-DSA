@@ -1,0 +1,26 @@
+package src;
+import java.util.*;
+//constructors has two types default and parameterized
+
+
+public class poly {
+	poly() {
+		System.out.println("i am in default constructor");
+
+	}
+	
+	poly(int num)
+	{
+		System.out.println("i am in parameterized constructor "+num);
+
+	}
+ 
+	public static void main(String argvs[]) {
+		int num=100;
+		poly p=new poly();
+//		poly p=new poly(num);
+		
+		
+
+	}
+}
