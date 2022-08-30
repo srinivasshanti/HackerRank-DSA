@@ -1,0 +1,45 @@
+package hello;
+
+public class overloading {
+
+	public static void main(String[] args) {
+		over o=new over();
+		o.over1();
+		o.over1(25);
+		o.over1(100, 100);
+		o.over1(0.1f);
+		o.over1(0.01d);
+		
+
+
+	}
+
+}
+
+
+class over{
+	void over1()
+	{
+		System.out.println("over1");
+	}
+	
+	void over1(int a)
+	{
+		System.out.println("over2 "+a);
+	}
+	
+	void over1(int a,int b)
+	{
+		System.out.println("over3 "+a+" "+b);
+	}
+	
+	void over1(float f)
+	{
+		System.out.println("over4 "+f);
+	}
+	
+	void over1(double d)
+	{
+		System.out.println("over5 "+d);
+	}
+}
