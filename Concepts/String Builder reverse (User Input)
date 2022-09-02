@@ -1,0 +1,14 @@
+package src;
+
+import java.util.Scanner;
+
+public class strbuilder {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine(); sc.close();
+		StringBuilder st=new StringBuilder(str);
+		StringBuilder rever=st.reverse();
+		System.out.println(rever);
+	}
+
+}
