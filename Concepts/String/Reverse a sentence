@@ -1,0 +1,19 @@
+package src;
+
+import java.util.Scanner;
+
+public class reverseastring {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		String str="hello sri world";
+		sc.close(); 
+	      	    
+	    StringBuilder sb=new StringBuilder(str);  //taking each input from array and convt to string builder
+	          
+	    
+        System.out.println(sb.reverse());		
+	}
+
+}
+ 
