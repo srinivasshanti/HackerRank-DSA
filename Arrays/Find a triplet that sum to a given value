@@ -1,0 +1,33 @@
+
+
+public class sumoftwoarrays {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		neww n=new neww();
+		int a1[]={10,8,12,5};
+        int q=23;
+        n.find(a1,q);
+	}
+} 
+
+
+class neww{
+	void find(int a1[],int q)
+	{ 
+	  int sum=0;
+	  int count=0; 
+		for(int i=0;i<4;i++)
+		{
+			for(int j=i+1;j<4;j++)
+			{
+				for(int k=j+1;k<4;k++)
+	
+				if(a1[i]+a1[j]+a1[k]==q)
+				{
+					System.out.println(a1[i]+" "+a1[j]+" "+a1[k]);
+				} 
+			} 		 	 
+		} 
+				
+	}
+}
