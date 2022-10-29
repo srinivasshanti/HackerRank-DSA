@@ -1,0 +1,40 @@
+
+
+public class sumoftwoarrays {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		neww n=new neww();
+		int a1[]={10,10,10,8,12,5,10};
+        int nn=a1.length;
+        n.findmajor(a1,nn); 
+	}
+} 
+
+
+class neww{
+	void findmajor(int a1[],int nn)
+	{ 
+	  int max=0;
+	  int index=-1; 
+		for(int i=0;i<nn;i++)
+		{
+            int count = 0;
+
+			for(int j=0;j<nn;j++)
+			{
+				
+				if(a1[i]==a1[j])
+				{
+					count++;
+				} 
+			} 		
+			 if (count > max) {
+	                max = count;
+	                index = i;
+	            }
+		} 
+	
+		System.out.println("the max occurence is "+max+" and the element is "+a1[index]);
+				
+	}
+}
