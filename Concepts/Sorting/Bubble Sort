@@ -1,29 +1,37 @@
-import java.util.*;
- 
-class Sorting {
-   public static void printArray(int arr[]) {
-       for(int i=0; i<arr.length; i++) {
-           System.out.print(arr[i]+" ");
-       }
-       System.out.println();
-   }
- 
-   public static void main(String args[]) {
-       int arr[] = {7, 8, 1, 3, 2};
- 
-       //bubble sort
-       for(int i=0; i<arr.length-1; i++) {
-           for(int j=0; j<arr.length-i-1; j++) {
-               if(arr[j] > arr[j+1]) {
-                   //swap
-                   int temp = arr[j];
-                   arr[j] = arr[j+1];
-                   arr[j+1] = temp;
-               }
-           }
-       }
- 
-       printArray(arr);
-   }
-}
 
+
+public class sumoftwoarrays {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		neww n=new neww();
+		int a1[]={5, 1, 4, 2, 8};
+        int nn=a1.length;
+        System.out.println(nn);
+        n.bubblesort(a1,nn); 
+	}
+}     
+   
+
+class neww{
+	void bubblesort(int a1[],int nn)
+	{ 
+		for(int i=0;i<nn-1;i++)
+		{  			
+			for(int j=0;j<nn-i-1;j++)			
+			{	if(a1[j]>a1[j+1])
+				{
+				int temp = a1[j+1];
+	            a1[j+1] = a1[j];
+	            a1[j] = temp;	 
+				}
+			}  
+				  
+				            	           					 
+		}  		
+		
+		 for(int a:a1)
+     	{
+     		System.out.print(a+" ");
+     	}					
+	}
+}
