@@ -1,0 +1,34 @@
+package src;
+
+import java.util.*;
+
+public class help {
+	public static void main(String[] args)
+	{
+		String[] arr = {"mint", "mini", "mineral"};
+        int size = arr.length;
+        
+           Arrays.sort(arr);                      
+           int length = arr[0].length();
+           
+           
+           StringBuilder res = new StringBuilder();
+           
+           for(int i = 0; i < length; i++)
+           { 
+             if(arr[0].charAt(i) == arr[size - 1].charAt(i)){
+            	 
+             	System.out.println(i+ " "+ arr[0].charAt(i)+" "+arr[size - 1].charAt(i));   
+               res.append(arr[0].charAt(i));
+               
+             }
+             else{
+               break;
+             }  
+             
+           }
+           System.out.println("Longest common prefix: " + res.toString());
+        
+ }
+}
+ 
