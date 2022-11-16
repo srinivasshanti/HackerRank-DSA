@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class help {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		String words[]=str.split("\\s");  //split after every space
+	    String reverseWord=""; 
+	    
+	    for(int i=0;i<words.length;i++)
+	    {  
+	        reverseWord=words[i]+" "+reverseWord;
+	    }   
+           System.out.println(reverseWord);		
+	}
+}
+ 
