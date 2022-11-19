@@ -1,0 +1,36 @@
+
+public class help {
+	public static void main(String[] args)
+	{
+		tryy obj = new tryy();	 
+        obj.setName("Getter & Setter");
+        System.out.println(obj.getName());	
+        
+	}
+} 
+
+class tryy {
+	private String name;
+	 
+ 
+    // Method 1 - Setter
+    public void setName(String N)
+    { 
+    	if(N.length()>10)
+    	{
+    		name = N;
+    	}
+ 
+        
+    }
+    
+    
+    
+
+    // Method 2 - Getter
+    public String getName() 
+    {
+    	return name; 
+    }
+}
+ 
