@@ -1,0 +1,22 @@
+
+import java.util.*;
+
+public class help {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		StringBuilder s=new StringBuilder();
+		String str="savinirs";
+		String strr="srinivas";
+		s.append(str);
+		s.reverse(); 
+		
+		if(s.toString().equals(strr)) {
+			System.out.println("yes");
+		} 
+				
+	}
+} 
+
+
+ 
