@@ -1,0 +1,122 @@
+
+
+public class help {
+	Node head;
+	Node tail;
+	int size;
+	
+	public help() {
+		this.size=0;
+	}
+	
+	public void insertFirst(int val)
+	{
+		Node node=new Node(val);
+		node.next=head;
+		head=node;
+		if(tail==null)
+		{
+			tail=head;
+		}
+		size+=1;	
+		
+	}
+	
+	public void insertLast(int val)
+	{
+		Node node=new Node(val);
+		tail.next=node;
+		tail =node;
+		if(tail==null)
+		{
+			insertFirst(val);
+			return;
+		}
+		size+=1;			
+	}
+	
+	public void display() {
+		Node temp=head;		
+		
+		while(temp!=null) {
+			System.out.print(temp.value+" ");
+			
+		    temp=temp.next;
+		}
+		System.out.println("END");
+		
+	}
+	
+	Node reverse()
+    {
+		Node node=head;
+        Node prev = null;
+        Node current = node;
+        Node next = null;
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        node = prev;
+        return node;
+    }
+	
+	 
+	
+	
+	public void inse(int value,int index)
+	{
+		if(index==0)
+			insertFirst( value);
+		if(index==size)
+			insertLast( value);
+		
+		Node temp=head;
+		for(int i=1;i<index;i++)
+		{
+			temp=temp.next;
+		}
+		
+		Node node=new Node(value,temp.next);//here next is next of current
+		temp.next=node;//node we created (prev element)
+		size++;
+					
+	}
+	
+	
+	class Node{
+		int value;  //its own value
+		Node next;
+		
+		//one constructor for only value
+		public Node(int value) {
+			this.value=value;
+		}
+		//here next means current next
+		public Node(int value,Node next) {
+			this.value=value;
+			this.next=next;
+			
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+	        help ll=new help();
+	        ll.insertFirst(2);
+	        ll.insertFirst(3);
+	        ll.insertLast(10);
+	        ll.inse(100 ,2);
+	        ll.display();
+	       
+	        
+	     
+											
+	}
+} 
+
+
+
+ 
