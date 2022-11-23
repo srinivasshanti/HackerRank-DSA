@@ -1,0 +1,26 @@
+
+import java.util.*;
+
+public class help {
+	public static void main(String[] args)
+	{
+	        StringJoiner s=new StringJoiner(",","[","]");
+	        s.add("A").add("B").add("D");
+	        System.out.println(s);
+	        
+	        StringJoiner ss=new StringJoiner(":");
+	        ss.add("A").add("B");
+	        System.out.println(ss);
+	        
+	        System.out.println(s.merge(ss));	       	        	    								
+	}
+} 
+
+
+
+
+
+
+
+
+ 
