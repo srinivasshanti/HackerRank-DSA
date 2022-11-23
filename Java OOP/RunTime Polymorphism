@@ -1,0 +1,35 @@
+
+import java.util.*;
+
+
+public class help {
+	public static void main(String[] args)
+	{
+		class1 a = new class1(); //object of type A
+		class2 b = new class2(); //object of type B
+		class3 c= new class3(); //object of type C
+		
+		b.callme();
+		c.callme();
+	}
+ } 
+
+ 
+class class1{
+	void callme() {
+		System.out.println("inside class1");
+	}
+}
+
+class class2 extends class1{
+	void callme() {
+		System.out.println("inside class2");
+	}
+}
+
+class class3 extends class2{
+	void callme() {
+		System.out.println("inside class3");
+	}
+}
+ 
