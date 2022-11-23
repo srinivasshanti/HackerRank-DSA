@@ -3,6 +3,8 @@ import java.util.*;
 
 //suppose we have a string ABCD
 //We need to check if rotation of ABCD is present or not
+//ip: ABCD
+//to find rotation of ABCD i.e CDAB is present or not
 
 public class help {
 	public static void main(String[] args)
