@@ -1,0 +1,32 @@
+import java.util.*;
+
+ 
+public class help {
+	  public static void main(String[] args) {  
+	        String str = "malayalam";
+	        help.approach1(str);
+	        help.approach2(str);	        	         	       	          	          	      
+	    }
+	  
+	  static void approach1(String str) {
+		  StringBuilder sb=new StringBuilder();
+		  sb.append(str);
+		  sb.reverse();
+		  sb.toString();
+		
+		  if(sb.equals(sb)==true) {
+			  System.out.println("Palindrome");
+		  }
+	  }
+	  
+	  static void approach2(String str) {
+		  int i;
+		  String reverse="";
+		  for(i=0;i<str.length();i++) {
+			  reverse=str.charAt(i)+reverse;
+		  } 
+		  if(str.compareTo(reverse)==0) {
+			  System.out.println("Palindrome");
+		  }
+	  }
+ } 
