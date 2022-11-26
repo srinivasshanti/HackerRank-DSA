@@ -1,0 +1,35 @@
+import java.util.*;
+
+
+public class help {
+	  public static void main(String[] args) {  
+	        String str = "Github";
+	        char stringg[]=str.toLowerCase().toCharArray();
+	        int freq[]=new int[str.length()];
+	        
+	        for(int i=0;i<str.length();i++)
+	        {
+	        	freq[i]=1;
+	        	for(int j=i+1;j<str.length();j++)
+	        	{
+	        		if(stringg[i]==stringg[j])
+	        		{
+	        			freq[i]++;
+	        			stringg[j]='0'; 
+	        			
+	        		} 
+	        	}
+	        }
+	         
+	        for(int i=0;i<str.length();i++) {
+	        	if(stringg[i]!=' ' && stringg[i]!='0' /*&& freq[i]>1*/)
+	        	{
+	        		System.out.println(stringg[i]+" "+freq[i]);
+	        	}
+	        	
+	        }
+	          
+	          
+	        
+	    }
+ }  
