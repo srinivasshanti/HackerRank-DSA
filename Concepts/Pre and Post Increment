@@ -1,0 +1,14 @@
+import java.util.*;
+
+
+public class help {
+	  public static void main(String[] args) {
+		  int x=2;
+		  int y=0;
+		  y=++x * ++x;
+		  System.out.print(y+""+x);
+		  int a=2;
+		  y=++a * a++;
+		  System.out.print(y+""+a);		  		    
+	  }		  				
+} 
