@@ -19,3 +19,29 @@ public class missing {
         }
     }
 }
+
+
+//Approach 2
+
+/*
+public class missing {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        List list = new ArrayList<>();
+        int ii=1;
+
+        // Iterate through the array
+        while( ii<=5) {
+            // Add each element into the list
+            list.add(sc.nextInt());            
+            ii++;
+        }
+
+        for(int i=1;i<list.size();i++){
+            if(!list.contains(i)){
+                System.out.println("Not found"+i);
+            }
+        }
+    }
+}
+ */
