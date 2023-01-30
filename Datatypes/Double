@@ -1,0 +1,14 @@
+import java.util.*;
+
+
+public class help {		
+	public static void main(String[] args){
+		  Scanner sc=new Scanner(System.in);
+		  double a = 3.0 / 2.0;   //must mention it as 3.0 format
+		  System.out.println(a);		   
+	}		 		  
+}   
+
+
+
+	   
